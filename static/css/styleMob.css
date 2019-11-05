@@ -1,0 +1,62 @@
+@media only screen and (max-width: 768px) {
+    .backgroundImg{
+        background-size: auto 100vh;
+    }
+    #landing_static{
+        display: none;
+    }
+    .relative_wrapper{
+        top:-2%;
+    }
+    .sixth{
+        background-size: auto 100%;
+    }
+    .fifth{
+        background-size: auto 100%;
+    }
+    .fourth{
+        background-size: auto 80%;
+        background-position: 0% bottom;
+    }
+    .third{
+        background-size: auto 80%;
+        background-position: right bottom;
+    }
+    .third_two{
+        background-size: auto 80%;
+        background-position: right bottom;
+    }
+    .third_three{
+        background-size: auto 80%;
+        background-position: right bottom;
+    }
+    .ring{
+        background-size: 140% auto;
+    }
+    .logo_second{
+        background-size: 120% auto;
+    }
+    .logo_first{
+        background-size: 120% auto;
+    }
+    .front_one{
+        background-size: auto 80%;
+        background-position: right bottom;
+    }
+    .front_two{
+        background-size: auto 80%;
+        background-position: right bottom;
+    }
+    .front_three{
+        display: none;      
+    }
+    .galleryImg{
+        height: 15vh;
+    }
+    .ticket{
+        width: 40%;
+    }
+    .date-venue{
+        width:90%;
+    }
+}

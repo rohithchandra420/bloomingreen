@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Tickets for Bloom in Green Transformational Festival.">
+    <title>Bloom in Green | Tickets</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./static/js/simple-lightbox.min.js" type="text/javascript"></script>
+    <script src="https://js.instamojo.com/v1/checkout.js"></script>
+    <link rel="shortcut icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./static/css/simplelightbox.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/styleMob.css"> -->
+
+    <!--Rc Edit-->
+
+    <link rel="stylesheet" href="./static/css/bootstrap/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+
+    <link href="./static/css/big.css" rel="stylesheet">
+
+    <!--End Rc Edit-->
+
+    <style>
+        #loading {
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 9999;
+            border-radius: 0;
+            overflow: hidden;
+            opacity: 1;
+        }
+
+        .buy-btn {
+            text-decoration: none;
+            padding: 8px 15px;
+            background: #edcc9f;
+            color: #212121;
+            font-weight: bold;
+            border: thin solid #b17e38;
+            display: inline-block;
+            margin-top: 16px;
+        }
+
+        p,
+        li {
+            font-family: 'Muli', sans-serif;
+            line-height: 1.4;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 1;
+            }
+
+            1% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #loadingGif {
+            position: absolute;
+            margin: auto;
+            display: block;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 15%;
+            width: auto;
+            z-index: 10000;
+            opacity: 1;
+            -webkit-animation: blink 1.5s infinite linear;
+            -moz-animation: blink 1.5s infinite linear;
+            -o-animation: blink 1.5s infinite linear;
+            animation: blink 1.5s infinite linear;
+        }
+
+        li {
+            padding: 2px;
+        }
+
+        html,
+        body {
+            overflow-y: scroll;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            /*  var context = new AudioContext();
+              context.resume().then(() => {
+                console.log('Playback resumed successfully');
+              });*/
+
+            $("#loading").animate({ "opacity": "0" }, 800);
+            setTimeout(() => {
+                $("#loading").css({ "display": "none" });
+            }, 800);
+        };
+
+
+
+        Instamojo.configure({
+            handlers: {
+                onOpen: function () { },
+                onClose: function () {
+                    document.location.reload(true);
+                    console.log("refresh")
+                },
+                onSuccess: function (response) { },
+                onFailure: function (response) { }
+            }
+        });
+
+        function onFestivalTicketClick() {
+            window.open("https://www.instamojo.com/BLOOMINGREEN_19/bloom-in-green-festival-dad11/");
+
+        }
+
+        function onBlrBusTicketClick() {
+            window.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-bangalore-up-and-down/");
+
+        }
+
+        function onKochiBusTicketClick() {
+            window.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-kochi-ac-semi-sleeper-round-tri/");
+
+        }
+
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149345905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149345905-1');
+    </script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2186770388231189');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=2186770388231189&ev=PageView
+&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+
+    <script async>
+        (function (w, d) {
+            w.CollectId = "5dba3e23a3d4732f9663f473";
+            var h = d.head || d.getElementsByTagName("head")[0];
+            var s = d.createElement("script");
+            s.setAttribute("type", "text/javascript");
+            s.setAttribute("src", "https://collectcdn.com/launcher.js");
+            h.appendChild(s);
+        })(window, document);
+    </script>
+</head>
+
+<body>
+
+    <div id="loading">
+        <img src="./static/img/landing/soul_logo.png" id="loadingGif">
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-lightbg-light sticky-top" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./static/img/BIG Logo.png" class="logoSpace">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item" id="menu_about">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item" id="menu_band">
+                        <a class="nav-link" href="./band.html">Bands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workshop.html">Workshops</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery.html">BIG '18 Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ticket.html">Ticket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="about" id="about_id">
+
+        <div class="container-fluid padding">
+            <div class="row content">
+                <div class="card-deck col-xs-12 col-md-12 col-lg-12 padding">
+                    <div class="col-xs-12 col-md-12 col-lg-12 padding">
+                        <h2 class="card-title">Festival Tickets</h2>
+                    </div>
+                    <div class="card padding">
+                        <div class="card-header">
+                            <h3>
+                                Phase 1 Tickets
+                            </h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">*Full festival access</li>
+                            <li class="list-group-item">*Tent stay (sleeping bags + mattress)</li>
+                            <li class="list-group-item">*Rs.4999 per person</li>
+                        </ul>
+                        <div class="card-footer">
+                            <button class="btn btn-green " onclick="onFestivalTicketClick()">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div class="card padding">
+                        <div class="card-header">
+                            <h3>
+                                Phase 2 Tickets
+                            </h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">*Full festival access</li>
+                            <li class="list-group-item">*Tent stay (sleeping bags + mattress)</li>
+                            <li class="list-group-item">*Rs.5499 per person</li>
+                        </ul>
+                        <div class="card-footer">
+                            <button class="btn btn-green" disabled onclick="">Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-deck padding col-xs-12 col-md-12 col-lg-12">
+                    <div class="col-xs-12 col-md-12 col-lg-12 padding">
+                        <h2 class="card-title">Festival Bus Tickets</h2>
+                    </div>
+                    <div class="card padding">
+                        <div class="card-header">
+                            <h3>
+                                Bangalore Bus
+                            </h3>
+                            <p class="card-text"><small class="text-muted">
+                                    (Only combined up and down tickets are available)</small></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">From Bangalore to Venue and Return</li>
+                            <li class="list-group-item">Start date: 20 Dec 2019 9:00 PM, Pickup point: TBA</li>
+                            <li class="list-group-item">Up and Down Fare: 2300/- INR</li>
+                        </ul>
+                        <div class="card-footer">
+                            <button class="btn btn-green " onclick="onBlrBusTicketClick()">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>
+                                Kochi Bus
+                            </h3>
+                            <p class="card-text"><small class="text-muted">
+                                    (Only combined up and down tickets are available)</small></p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Start date: 20 Dec 2019 7:00 PM, Pickup point: Kaloor </li>
+                            <li class="list-group-item">Return date: 23 Dec 2019 10:00 AM, Pickup point: Venue</li>
+                            <li class="list-group-item">Vestibulum at eros</li>
+                        </ul>
+                        <div class="card-footer">
+                            <button class="btn btn-green " onclick="onKochiBusTicketClick()">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="container-fluid padding">
+            <div class="row content">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h3>
+                        <strong>How to reach the venue in Public transport</strong>
+                    </h3>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h3>
+                        <h4><strong><u>From Bangalore</u></strong></h4>
+                    </h3>
+                </div>
+
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <ul>
+                        <li>Take a bus from Bangalore to Puttur (Redbus.in – 7 hours journey)</li>
+                        <li>Take a local bus from Puttur to Adyanadka (20 kms) </li>
+                        <li>Take an auto from Adyanadka to Festival parking (Kollapadavu Ground) . (3 kms)</li>
+                        <li>Free pickup from Festival parking to Venue (1.5 kms)</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h4><strong><u>From Kerala (Trivandrum, Kochi, Thrissur, Calicut)</u></strong></h4>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <ul>
+                        <li>Take a train/bus and reach Kasargod.</li>
+                        <li>Take a bus to Puttur from kasargod city bus stand and get down at Adyanadka. (40 kms)</li>
+                        <li>Take an auto from Adyanadka to Festival parking (Kollapadavu Ground) . (3 kms)</li>
+                        <li>Free pickup from Festival parking to Venue (1.5 kms)</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h4><strong><u>From Mangalore, Goa, Mumbai, Pune</u></strong></h4>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <ul>
+                        <li>Take a Train/Bus to reach Mangalore.</li>
+                        <li>Take a bus to Vittla from State Bank Bus stand (40 kms, frequency is 1 hour).</li>
+                        <li>Take a bus from Vittla to Adyanadka. (10 kms)</li>
+                        <li>Take an auto from Adyanadka to Festival parking (Kollapadavu Ground). (3 kms)</li>
+                        <li>Free pickup from Festival parking to Venue (1.5 kms)</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h3>How to reach the venue in Own transport</h3>
+                </div>
+
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <ul>
+                        <li>Reach the Festival parking (Kollapadavu ground).</li>
+                        <li>Free pickup from Festival parking to Venue (1.5 kms)</li>
+                        <li>Location:
+                            <a href="https://goo.gl/maps/JUF4XTB43BugTx6RA" target="_blank">Location:
+                                https://goo.gl/maps/JUF4XTB43BugTx6RA</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h3>
+                        Terms & Conditions
+                    </h3>
+                </div>
+                <hr />
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <ol>
+                        <li> Age limit 5+ </li>
+                        <li> Then internet-handling fees may levied over the tickets. Please check the total amount
+                            before
+                            payment. </li>
+                        <li> The tickets are not cancellable from December 10th. Refund Policy is as given below. </li>
+                        <li> Bus tickets are not exchangeable or refundable or cancellable. </li>
+                        <li> Event can be rescheduled, cancelled, shifted at the sole discretion of Karloom
+                            Entertainments.
+                        </li>
+                        <li> Usage or possession of any kinds of drugs are strictly prohibited </li>
+                        <li> Any kinds of single-use plastics are not allowed inside the festival premises. </li>
+                        <li> Organizers reserve the rights to perform security checks at the festival </li>
+                        <li> Wrist band given should be worn all through the festival time </li>
+                        <li> Alcohol will not be sold at the venue. This is an alcohol-free festival. We recommend to
+                            refrain
+                            from the consumption of the same during the festival for the better experience.
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <h3>
+                        Refund Policy
+                    </h3>
+                </div>
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <ol>
+                        <li> Full Refund if you cancel before 21st November </li>
+                        <li> Half Refund if you cancel before 10th December </li>
+                        <li> No Refund if you cancel after 10th December </li>
+                    </ol>
+                    <p style="color: red;">
+                        *Please note that internet handling fee will not be refunded.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./static/js/content.js" type="text/javascript"></script>
+
+</html>

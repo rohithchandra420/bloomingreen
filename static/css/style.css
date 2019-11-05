@@ -1,0 +1,551 @@
+/*IE9*/
+*::selection 
+{
+    background-color:transparent;
+} 
+*::-moz-selection
+{
+    background-color:transparent;
+}
+*
+{        
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    /*IE10*/
+    -ms-user-select: none;
+    user-select: none;
+
+    /*You just need this if you are only concerned with android and not desktop browsers.*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}    
+input[type="text"], textarea, [contenteditable]
+{
+
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rakkas&display=swap');
+
+@font-face {
+  font-family: "BeautifulRosesRegular";
+
+  src: url("../fonts/BeautifulRosesRegular.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/BeautifulRosesRegular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+}
+.backgroundImg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: block;
+    z-index: 0;
+    background: url('../img/landing_new/sixth.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.center{
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    left: 0;right: 0;bottom: 0;top: 0;
+}
+.full{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.landing_div{
+    width: 100%;
+    height: 100%;
+}
+.relative_wrapper{
+    width: 110%;
+    height: 110%;
+    position: relative;
+    left: -4%;
+    top: -4%;
+}
+
+.landing_img{
+    margin: auto;
+    position: absolute;
+    left:0;right:0;top:0;bottom:0;
+    width: 100%;
+    height: auto;
+}
+.landing_static_img{
+    background: url('../img/landing/static_tribe.png') no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+.sixth{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/sixth.jpg') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.fifth{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/fifth.webp') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.fourth{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/7.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.ring{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing/ring_2.png') no-repeat;
+    background-size: 85% auto;
+    background-position: center center;
+    -webkit-animation: rotation 13s infinite linear;
+    -moz-animation: rotation 13s infinite linear;
+    -o-animation: rotation 13s infinite linear;
+    animation: rotation 13s infinite linear;
+}
+.third{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/2_2.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.third_two{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/4_2.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.third_three{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/8_2.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.front_one{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing/third.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.front_two{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/6_2.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.front_three{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing_new/5.png') no-repeat;
+    background-size: 100% auto;
+    background-position: center center;
+}
+.logo_second{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing/second.png') no-repeat;
+    background-size: 60% auto;
+    background-position: center center;
+}
+.logo_first{
+    width: 100%;
+    height: 100%;
+    background: url('../img/landing/typo_2.png') no-repeat;
+    background-size: 70% auto;
+    background-position: center center;
+}
+#scene{
+    height: 100%;
+    width: 100%;
+}
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+.aftermovie{
+    position: absolute;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.gallery{
+    position: relative;
+    display: block;
+    margin: 10% auto;   
+    left: 0;
+    right: 0;
+    width: 75%;
+    height: auto;
+    z-index: 5;
+}
+.galleryWrapper{
+    width: 85%;
+    top: 20vh;
+}
+.galleryImg{
+    height: 30vh;
+    width: auto;
+}
+
+.date-venue{
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    bottom: 25%;
+    left:0;right: 0;
+    width: 20%;
+    height: 100px;
+    z-index: 5;
+    text-align: center;
+}
+
+.date-venue h2,.date-venue h4{
+    margin-bottom: 6px;
+    margin-top: 6px;
+    color: #253d1a;
+}
+
+.date-venue p{
+    margin-top:3px;
+    color: #253d1a;
+}
+
+.about{
+    position: relative;
+    display: block;
+    margin: 10% auto;   
+    left: 0;
+    right: 0;
+    width: 75%;
+    height: auto;
+    z-index: 5;
+}
+
+.aboutWrapper{      
+    padding:5%; 
+    background: rgba(255,255,255,0.3);
+    height: 100%;
+}
+
+.ticket{
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    bottom: 12%;
+    left:0;right: 0;
+    width: 20%;
+    height: 50px;
+    z-index: 5;
+    text-align: center;
+}
+.early{
+    font-size: 3vh;
+    color: white;
+    border: thin solid #ffffff;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.early:hover{
+    background: #ffffff;
+    color: #000000;
+}
+.ticket:hover{
+    cursor: pointer;    
+}
+
+.menu_wrapper_wrapper{
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    top: 75%;
+    left: 0;
+    right: 0;
+    width: 9vh;
+    height: 9vh;
+    z-index: 5;
+    overflow: visible;
+}
+.menu_wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.second_menu{
+    position: absolute;
+    width: 9vh;
+    height: 9vh;
+    margin: 0 auto;
+    display: block;
+    z-index: 6;
+    border-radius: 50%;
+    background-color: white;
+}
+.animator{
+    position: absolute;
+    display: block;
+    margin:auto;
+    top: 0;bottom: 0;
+    border-radius: 50%;
+    background-color: white;
+    width: 9vh;
+    height: 9vh;
+    z-index: 5;
+}
+.second_menu:hover{
+    cursor: pointer;
+    background-color: rgb(2, 26, 4);
+}
+#menu_icon{
+    width: 100%;
+    height: 100%;
+}
+.menu_icon_wrapper{
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 0; right: 0;top: 0;bottom: 0;
+    width: 75%;
+    height: 75%;
+}
+
+.menu_content{
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+.test{
+    top: -20vh;
+    width: 100%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu_element{
+    height: 15%;
+    margin: 3vh auto;
+    display: block;
+    font-size: 200%;
+    font-family: 'BeautifulRosesRegular', cursive;
+    font-weight: 800;
+}
+.menu_element:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Contact Page */
+
+.contact{
+    position: relative;
+    display: block;
+    margin: 10% auto;   
+    left: 0;
+    right: 0;
+    width: 75%;
+    height: auto;
+    z-index: 5;
+}
+
+.contactWrapper{      
+    padding:5%; 
+    background: rgba(255,255,255,0.3);
+    height: 100%;
+}
+
+.contact_wrapper p {
+    line-height: 2;
+}
+
+a.insta_btn {
+    margin-right: 12px;
+    height: 40px;    
+    display: inline-block;
+    padding: 6px 24px;
+    margin-bottom: 20px;
+    border: thin solid #253d1a;
+    color: #253d1a;
+}
+
+a.fb_btn {    
+    height: 40px;    
+    display: inline-block;
+    padding: 6px 24px;
+    margin-bottom: 20px;
+    border: thin solid #253d1a;
+    color: #253d1a;
+}
+
+a.insta_btn img, a.fb_btn img {
+    width: 24px;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+
+@media screen and (max-width:768px){
+ 
+    a.insta_btn, a.fb_btn {               
+        display: block;        
+    }
+    
+}
+
+/* Workshop Page */ 
+
+.workshop{
+    position: relative;
+    display: block;
+    margin: 10% auto;   
+    left: 0;
+    right: 0;
+    width: 75%;
+    height: auto;
+    z-index: 5;
+}
+
+.workshopWrapper{      
+    padding:5%; 
+    background: rgba(255,255,255,0.3);
+    height: 100%;
+}
+
+.workshopWrapper h2 {
+    font-family: 'BeautifulRosesRegular';
+    font-size: 2.5em;
+}
+
+.workshopWrapper .item {
+    width: 48%;
+    display: inline-grid;
+    background: rgba(255,255,255,0.3);    
+    margin-bottom: 12px;
+    margin-right: 12px;    
+}
+
+.workshopWrapper .item:hover {
+    background: rgb(159, 134, 94, 0.6);    
+}
+
+.workshopWrapper .title{    
+    height: 240px;
+}
+
+.workshopWrapper .content{
+    padding: 12px;
+    border-left: 3px solid rgba(0,0,0,0.2);
+    border-right: 3px solid rgba(0,0,0,0.2);
+    border-bottom: 3px solid rgba(0,0,0,0.2);
+}
+
+.title h3 {    
+    margin-top: 100px;
+    text-align: center;        
+    font-size: 1.5em;
+    line-height: 1.5;
+    background: rgba(0,0,0, 0.3);
+    color: #ffffff;
+    font-family: 'BeautifulRosesRegular';
+}
+
+.content p {
+    font-family: 'Muli', sans-serif;
+    line-height: 1.4;
+    font-size: 0.9em;
+}
+
+@media screen and (max-width:768px){
+    .workshopWrapper .item{
+        width: 100%;   
+    }   
+}
+
+/* Band Page */
+
+.band{
+    position: relative;
+    display: block;
+    margin: 10% auto;   
+    left: 0;
+    right: 0;
+    width: 75%;
+    height: auto;
+    z-index: 5;
+}
+
+.bandWrapper{      
+    padding:5%; 
+    background: rgba(255,255,255,0.3);
+    height: 100%;
+}
+
+.bandWrapper h2 {
+    font-family: 'BeautifulRosesRegular';
+    font-size: 2.5em;
+}
+
+.banditem{
+    display: block;
+    height: 320px;
+    width: auto;
+    border: 5px solid transparent;
+    margin-bottom: 20px;
+}
+
+.banditem:hover {
+    border: 5px solid #ffffff;
+}
+
+.banditem h2 {
+    margin-top: 18%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3em;
+    font-family: 'BeautifulRosesRegular';
+}
+
+@media screen and (max-width:768px){
+    .banditem h2{
+        margin-top: 37%;   
+    }
+}

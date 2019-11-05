@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rakkas&display=swap');
+
+
+@font-face {
+    font-family: "BeautifulRosesRegular";
+  
+    src: url("../fonts/BeautifulRosesRegular.woff") format("woff"), /* Modern Browsers */
+      url("../fonts/BeautifulRosesRegular.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    background-image: url('../img/backgroundImg.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+p {
+    text-align:justify;  
+    text-justify:distribute;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.content hr {
+    border-top: 2px solid #b4b4b4;
+    width: 100%;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+}
+
+.navbar {
+    padding: .8rem;
+    background-image: url('../img/backgroundImg.webp');
+    /* background: rgba(2, 52, 12,0.3); */
+}
+
+/* .custom-toggler.navbar-toggler {
+    border-color: rgba(2, 52, 12,);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} */
+
+.custom-toggler.navbar-toggler { 
+    border-color: rgba(2, 52, 12,0.3); 
+    box-shadow: 5px 10px 18px #888888;
+} 
+/* Setting the stroke to green using rgb values (0, 128, 0) */ 
+  
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 128, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.1em !important;   
+    color: rgb(2, 52, 12); 
+}
+
+a .nav-link {  
+    color: #fff; 
+}
+
+.logoSpace {
+    width: 300px;
+}
+
+.padding{
+    padding: 10px;   
+    background: rgba(255,255,255,0.3); 
+}
+
+.wrapper{
+    padding: 30px;    
+}
+
+.card{
+    box-shadow: 5px 10px 18px #888888;
+    background: rgba(255,255,255,0.3);
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card-body{
+    height: ;
+}
+
+.card-title {
+    text-align: center;
+}
+
+.modal-backdrop
+{
+    opacity:0.7 !important;
+}
+
+.modal-content{
+    background-color: rgba(255, 240, 196 ,0.3);
+}
+
+.popup-close{
+    position: absolute;
+}
+
+.modal{
+    top: 125px;
+}
+
+/* The Image container */
+.img-hover-zoom {    
+    overflow: hidden; /* Removing this will break the effects */
+}
+
+#bandimg {
+    height: 250px;
+}
+
+/* Slow-motion Zoom Container */
+.img-hover-zoom--slowmo #bandimg {
+    transform-origin: 50% 20%;
+    transition: transform 5s, filter 3s ease-in-out;
+    /* filter: brightness(150%); */
+  }
+  
+  /* The Transformation */
+  .img-hover-zoom--slowmo:hover #bandimg{
+    filter: brightness(100%);
+    transform: scale(3);
+  }
+
+#wrkshopImg {
+    /* height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline-block; */
+}
+
+.title h3 {
+    font-family: 'BeautifulRosesRegular', cursive;
+        font-weight: 900;
+        color: rgba(2, 52, 12, 0.7);
+        text-transform: uppercase;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: fit-content;
+        font-size: 2rem;
+        transform: translate(-50%, -50%);
+        text-shadow: -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        text-align: center;
+}
+
+.btn-green {
+    color: #fff;
+    background-color: rgb(2, 52, 12);;
+    border-color: rgb(2, 52, 12);
+  }
+  
+  .btn-green:hover {
+    color: #fff;
+    background-color: rgb(4, 80, 19);
+    border-color: rgb(4, 80, 19);
+  }
+  
+  .btn-green:focus, .btn-green.focus {
+    box-shadow: 0 0 0 0.2rem rgba(2, 52, 12, 0.5);
+  }
+  
+  .btn-green.disabled, .btn-green:disabled {
+    color: #fff;
+    background-color: #51555a;
+    border-color: #51555a;
+  }
+  
+  .btn-green:not(:disabled):not(.disabled):active, .btn-green:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(2, 52, 12);
+    border-color: rgba(2, 52, 12);;
+  }
+  
+  .btn-green:not(:disabled):not(.disabled):active:focus, .btn-green:not(:disabled):not(.disabled).active:focus,
+  .show > .btn-green.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(4, 80, 19);
+  }
+
+
+/*--------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .social a{
+        font-size: 4em;
+        padding: 2rem;
+    }
+
+    #bandimg {
+        height: 350px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 680px;
+    }
+
+    .carousel-caption {        
+        top: 45%;        
+    }
+    
+    .carousel-caption h1 {
+        font-size: 350%;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 140%;
+        font-weight: 400;
+        padding-bottom: .2rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 95%;
+        padding: 8px 14px;
+    }
+
+    .display-4 {
+        font-size: 200%;
+    }
+
+    .social a{
+        font-size: 2.5em;
+        padding: 1.2rem;
+    }
+
+    #bandimg {
+        height: 350px;
+    }
+
+    .title h3 {
+        font-family: 'BeautifulRosesRegular', cursive;
+            font-weight: 900;
+            color: rgba(2, 52, 12, 0.7);
+            text-transform: uppercase;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: fit-content;
+            font-size: 1.3rem;
+            transform: translate(-50%, -50%);
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+    
+}
+
+@media (max-width: 576px) {
+
+    #bandimg {
+        height: auto;
+    }
+
+    .carousel-item {
+        height: 540px;
+    }
+
+    .carousel-caption {        
+        top: 40%;        
+    }
+    
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+    
+    .carousel-caption h3 {
+        font-size: 110%;
+    }
+
+    .carousel-caption .btn {
+        font-size: 90%;
+        padding: 4px 8px;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+
+    .display-4 {
+        font-size: 160%;
+    }
+
+    .social a{
+        font-size: 2em;
+        padding: .7rem;
+    }
+
+    #wrkshopImg {
+        height: 100%;
+        width: 100%;
+        /* border-radius: 50%; */
+        display: inline-block;
+    }
+
+    .band{
+        margin: 10% auto;   
+        left: 0;
+        right: 0;
+        width: 75%;
+        height: auto;
+        z-index: 5;
+    }
+
+    .section {
+        float: left;
+        width: 25%;
+    }
+    
+    .section.collapsible {
+        opacity: 1;
+        transition: all linear 1s;
+    }
+    
+    .section.collapsible.collapsed {
+        width: 0;
+        opacity: 0;
+        padding:0:
+    }
+    
+    .section.collapsible .sub-section-border-box {    
+        padding: 10px;
+        border-width: 2px;
+        transition: all linear 1s;
+    }
+    
+    .section.collapsible.collapsed .sub-section-border-box{    
+        padding: 0;
+        border-width: 0;
+    }
+    
+    .sub-section,
+    .sub-section-border-box {
+        width: 50%;
+        float: left;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid #fff;    
+    }
+    
+    .sub-section-no-padding {
+        width: 50%;
+        float: left;
+        height: 42px;
+    }
+    
+    .label {
+        text-align: right;
+    }
+    
+    .field {
+        border-color: #ddd;
+        background-color: #f7f7f7;
+    }
+
+    .title h3 {
+        font-family: 'BeautifulRosesRegular', cursive;
+            font-weight: 900;
+            color: rgba(2, 52, 12, 0.7);
+            text-transform: uppercase;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: fit-content;
+            font-size: 1.3rem;
+            transform: translate(-50%, -50%);
+            text-shadow: -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+}
