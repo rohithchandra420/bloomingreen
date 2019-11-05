@@ -99,7 +99,7 @@ menu_icon.click(function () {
         }, 200);
     }
 
-    window.location.href = 'file:///D:/Rohith/Web/akhilthankachen.github.io-master/about.html'
+    window.location.href = './about.html'
 
     animator.animate({
         opacity: 0
