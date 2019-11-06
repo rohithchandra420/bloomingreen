@@ -296,9 +296,8 @@ body{
     position: fixed;
     margin: 0 auto;
     display: block;
-    top: 75%;
-    left: 0;
-    right: 0;
+    top: 5%;
+    right: 5%;
     width: 9vh;
     height: 9vh;
     z-index: 5;
