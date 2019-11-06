@@ -204,6 +204,9 @@ a .nav-link {
   .show > .btn-green.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgb(4, 80, 19);
   }
+#workshopContentId {
+    color: #dee2e6;
+}
 
 
 /*--------------------------------------------------------------------------------------------------------------
