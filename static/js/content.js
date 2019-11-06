@@ -19,6 +19,7 @@ var contact = $('#contact_id');
 var workshop = $('#workshop_id');
 var band = $('#band_id');
 var menu_icon = $('#menu_icon');
+var home_Menu = $('#home_Menu');
 var menu_content = $('#menu_content');
 var menu_home = $('#menu_home');
 var menu_about = $('#menu_about');
@@ -64,6 +65,7 @@ menu_content.css({
     'display': 'none'
 });
 menu_icon.attr('src', './static/img/menu.png');
+home_Menu.attr('src', './static/img/menu.png');
 
 
 //mouse enter menu
@@ -110,8 +112,38 @@ menu_icon.click(function () {
         width: "9vh",
         height: "9vh"
     }, 0);
-    menu_icon.attr('src', './static/img/menu_2.png');
     menu_state = false;
+});
+
+//mouse click home_Menu fromAftermovie
+home_Menu.click(function () {
+    if (window.innerHeight > window.innerWidth) {
+        animator.animate({
+            width: window.innerHeight * 3,
+            height: window.innerHeight * 3,
+            left: -window.innerWidth / .5
+        }, 200);
+    } else {
+        animator.animate({
+            width: window.innerWidth * 3,
+            height: window.innerWidth * 3,
+            left: -window.innerWidth / .9
+        }, 200);
+    }
+
+    window.location.href = 'https://bloomingreenfestival.com'
+
+    animator.animate({
+        opacity: 0
+    }, 600);
+    animator.animate({
+        opacity: 1,
+        left: "0vh",
+        width: "9vh",
+        height: "9vh"
+    }, 0);
+    menu_state = false;    
+    menu_icon.attr('src', './static/img/menu.png');
 });
 
 //mouse click on menu content
