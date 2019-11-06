@@ -163,7 +163,6 @@ a .nav-link {
         text-transform: uppercase;
         margin: 0;
         position: absolute;
-        top: 50%;
         left: 50%;
         width: fit-content;
         font-size: 2rem;
@@ -268,7 +267,6 @@ a .nav-link {
             text-transform: uppercase;
             margin: 0;
             position: absolute;
-            top: 50%;
             left: 50%;
             width: fit-content;
             font-size: 1.3rem;
@@ -392,7 +390,6 @@ a .nav-link {
             text-transform: uppercase;
             margin: 0;
             position: absolute;
-            top: 50%;
             left: 50%;
             width: fit-content;
             font-size: 1.3rem;
