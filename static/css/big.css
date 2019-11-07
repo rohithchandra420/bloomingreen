@@ -18,11 +18,11 @@ html, body{
     height: 100%;
     font-family: 'Poppins', sans-serif;
     color: #222;
-    background-image: url('../img/backgroundImg.webp');
+    background: url('../img/backgroundImg.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    background-position: center center;
 }
 
 p {
@@ -45,7 +45,7 @@ p {
 
 .navbar {
     padding: .8rem;
-    background-image: url('../img/backgroundImg.webp');
+    background: url('../img/backgroundImg.webp');
     /* background: rgba(2, 52, 12,0.3); */
 }
 
