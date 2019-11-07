@@ -277,6 +277,23 @@ body{
     z-index: 5;
     text-align: center;
 }
+
+.aftermovie-btn{
+    position: fixed;
+    display: block;
+    margin: 0 auto;
+    bottom: 10%;
+    left:0;right: 0;
+    width: 40%;
+    height: 50px;
+    z-index: 5;
+    text-align: center;
+}
+
+.aftermovie-btn:hover{
+    cursor: pointer;  
+}
+
 .early{
     font-size: 3vh;
     color: white;
