@@ -113,8 +113,12 @@
       // Instamojo.open("https://www.instamojo.com/BLOOMINGREEN_19/bloom-in-green-festival/");
       //window.location.href = 'https://bloomingreenfestival.com/ticket';
       window.location.href = './ticket.html';
-
     }
+    
+    function onAfterMovieClick(){
+      window.location.href = './aftermovie.html';
+   }
+
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149345905-1"></script>
@@ -222,6 +226,10 @@
 
   <div class="ticket" id="ticket_id">
     <h2 class="early" onClick="onTicketClick()">Buy Tickets</h2>
+  </div>
+  
+  <div class="aftermovie-btn" id="aftermovie_id">
+    <h2 class="early" onClick="onAfterMovieClick()">Watch BIG'18 Aftermovie</h2>
   </div>
 
 
