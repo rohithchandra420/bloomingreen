@@ -280,15 +280,16 @@ a .nav-link {
     }
 
     .title h3 {
-        font-family: 'BeautifulRosesRegular', cursive;
             font-weight: 900;
-            color: rgba(2, 52, 12, 0.7);
+            color: rgba(2, 52, 12);
+            background: rgba(256, 256, 256, 0.6);
             text-transform: uppercase;
             margin: 0;
             position: absolute;
             left: 50%;
+            top: 50%;
             width: fit-content;
-            font-size: 1.3rem;
+            font-size: 2 rem;
             transform: translate(-50%, -50%);
             text-shadow: -1px -1px 0 #fff, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     }
@@ -399,13 +400,14 @@ a .nav-link {
     }
 
     .title h3 {
-        font-family: 'BeautifulRosesRegular', cursive;
             font-weight: 900;
-            color: rgba(2, 52, 12, 0.7);
+            color: rgba(2, 52, 12);
+            background: rgba(256, 256, 256, 0.6);
             text-transform: uppercase;
             margin: 0;
             position: absolute;
             left: 50%;
+            top: 50%;
             width: fit-content;
             font-size: 1.3rem;
             transform: translate(-50%, -50%);
