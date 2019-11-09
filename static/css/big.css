@@ -170,6 +170,7 @@ a .nav-link {
         margin: 0;
         position: absolute;
         left: 50%;
+        top: 50%;
         width: fit-content;
         font-size: 3rem;
         transform: translate(-50%, -50%);
