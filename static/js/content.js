@@ -36,29 +36,42 @@ var workshop_content = $('.workshopWrapper .content');
 
 var slack = "./static/img/workshop/slacklining.jpg";
 var acro = "./static/img/workshop/acro.jpg";
-var contactImprov = "./static/img/workshop/contact improvisation.jpg"
+var contactImprov = "./static/img/workshop/contact improvisation.jpg";
 var didge = './static/img/workshop/didge.jpg';
-var dreamCatcher = './static/img/workshop/dream catcher.jpg'
-var ecoSymp = './static/img/workshop/ecology symposium.jpg'
-var estaticDance = './static/img/workshop/ecstatic dance.jpg'
-var haiku = './static/img/workshop/haiku.jpg'
-var handpan = './static/img/workshop/handpan.jpg'
-var hulaHoop = './static/img/workshop/hula hoop.jpg'
-var photography = './static/img/workshop/photography.jpg'
-var plantMedicine = './static/img/workshop/plant medicine.jpg'
+var dreamCatcher = './static/img/workshop/dream catcher.jpg';
+var ecoSymp = './static/img/workshop/ecology symposium.jpg';
+var estaticDance = './static/img/workshop/ecstatic dance.jpg';
+var haiku = './static/img/workshop/haiku.jpg';
+var handpan = './static/img/workshop/handpan.jpg';
+var hulaHoop = './static/img/workshop/hula hoop.jpg';
+var photography = './static/img/workshop/photography.jpg';
+var plantMedicine = './static/img/workshop/plant medicine.jpg';
+var aliLife = './static/img/workshop/alignment_to_life.jpg';
+var soundheal = './static/img/workshop/sound_healingnmeditation.jpg';
+var poi = './static/img/workshop/poi_spinning.jpg';
+var potCraft = './static/img/workshop/potting and plant crafting.jpg';
+var sws = './static/img/workshop/sws.jpg'
+var dorodango = './static/img/workshop/dorodango.jpg';
 
-var slackText = "Slackline is the simple art of balancing and walking on a thin piece of webbing. Balancing the webbing and yourself at the same time can be at times calming as a struggle at the same time. It requires a focused mind and a relaxed body, but above all its fun. Workshop facilitated by Patrick Bosen."
-var acroText = "Acroyoga is a physical practice, which combines yoga and acrobatics. Acro yoga includes many types of (mostly recreational) partner and group acrobatics in which at least someone is lifted. As such, it also draws on traditions of circus arts, cheerleading, and dance acro."
-var contactImprovText = "Contact Improvisation is a partner dance form based on the physical principles of touch, momentum, shared weight, and most quintessentially - following a shared point of contact. This dance practice explores the skills of falling, rolling, counterbalance, lifting using minimal effort, how to make ourselves light when being lifted, centering and breathing techniques, and responsiveness to our partners and surroundings. Workshop taken by Contact Improvisation"
+
+var slackText = "Slackline is the simple art of balancing and walking on a thin piece of webbing. Balancing the webbing and yourself at the same time can be at times calming as a struggle at the same time. It requires a focused mind and a relaxed body, but above all its fun. Workshop facilitated by Patrick Bosen.";
+var acroText = "Acroyoga is a physical practice, which combines yoga and acrobatics. Acro yoga includes many types of (mostly recreational) partner and group acrobatics in which at least someone is lifted. As such, it also draws on traditions of circus arts, cheerleading, and dance acro.";
+var contactImprovText = "Contact Improvisation is a partner dance form based on the physical principles of touch, momentum, shared weight, and most quintessentially - following a shared point of contact. This dance practice explores the skills of falling, rolling, counterbalance, lifting using minimal effort, how to make ourselves light when being lifted, centering and breathing techniques, and responsiveness to our partners and surroundings. Workshop taken by Contact Improvisation";
 var didgeText = 'The didgeridoo is a wind instrument made from hollow wood. The first didgeridoos, played by aboriginal peoples in northern Australia an estimated 40,000 years ago, were made from fallen eucalyptus branches that had been naturally hollowed out by termites. It is also known that the mayan people of Central America had a similar instrument made of yucca or agave and today referred to as “la trompeta maya”. Workshop facilitated by Yogev Haruvi.';
-var dreamCatcherText = 'Dream catcher is a handmade willow hoop, on which is woven a net or web. The dreamcatcher may also include sacred items such as certain feathers or beads. Traditionally they are often hung over cradles as protection. Workshop facilitated by Tejaswini Gopalakrishnan.'
-var ecoSympText = 'Experts talking in various topics like unconventional living, rain water harvesting, minimalism, organic farming, vegan athletics and so on.'
-var estaticDanceText = 'Ecstatic dance is a form of dance in which the dancers, sometimes without the need to follow specific steps, abandon themselves to the rhythm and move freely as the music takes them, leading to trance and a feeling of ecstasy. The effects of ecstatic dance begin with ecstasy itself, which may be experienced in differing degrees. Dancers are described as feeling connected to others, and to their own emotions. The dance serves as a form of meditation, helping people to cope with stress and to attain serenity. The workshop at BIG is facilitated by Ranjith Vallathol, founder of Thathsthu Wellness.'
-var haikuText = 'Haiku is a Japanese poetry form. A haiku uses just a few words to capture a moment and create a picture in the readers mind. It is like a tiny window into a scene much larger than itself. raditionally, haiku is written in three lines, with five syllables in the first line, seven syllables in the second line, and five syllables in the third line. Stroll in the nature and write haiku poems with Samantak Bhadra.'
-var handpanText = 'You will get in touch with this amazing instrument and we will guide you trough the basics of playing, explain the different types of scales, materials and playing styles. This is a hands-on experience and is designed for you to make an educated choice about whether this is something you want to further explore, before investing in an instrument. Workshop facilitated by Dheeraj and Akshay.'
-var hulaHoopText = 'If you think hula hooping is just for kids, think again. This simple piece of equipment can boost the fun factor in your fitness routine and give you an excellent workout at the same time. The hoop is twirled around the waist, limbs or neck. Workshop is facilitated by Smriti Singh.'
-var photographydText = 'A one-day photography workshop for enthusiasts who want to learn photography by understanding the technicalities of cameras and composition techniques. Workshop is taken by Arun Hegden. He is a professional photographer, based up in Mysore.'
+var dreamCatcherText = 'Dream catcher is a handmade willow hoop, on which is woven a net or web. The dreamcatcher may also include sacred items such as certain feathers or beads. Traditionally they are often hung over cradles as protection. Workshop facilitated by Tejaswini Gopalakrishnan.';
+var ecoSympText = 'Experts talking in various topics like unconventional living, rain water harvesting, minimalism, organic farming, vegan athletics and so on.';
+var estaticDanceText = 'Ecstatic dance is a form of dance in which the dancers, sometimes without the need to follow specific steps, abandon themselves to the rhythm and move freely as the music takes them, leading to trance and a feeling of ecstasy. The effects of ecstatic dance begin with ecstasy itself, which may be experienced in differing degrees. Dancers are described as feeling connected to others, and to their own emotions. The dance serves as a form of meditation, helping people to cope with stress and to attain serenity. The workshop at BIG is facilitated by Ranjith Vallathol, founder of Thathsthu Wellness.';
+var haikuText = 'Haiku is a Japanese poetry form. A haiku uses just a few words to capture a moment and create a picture in the readers mind. It is like a tiny window into a scene much larger than itself. raditionally, haiku is written in three lines, with five syllables in the first line, seven syllables in the second line, and five syllables in the third line. Stroll in the nature and write haiku poems with Samantak Bhadra.';
+var handpanText = 'You will get in touch with this amazing instrument and we will guide you trough the basics of playing, explain the different types of scales, materials and playing styles. This is a hands-on experience and is designed for you to make an educated choice about whether this is something you want to further explore, before investing in an instrument. Workshop facilitated by Dheeraj and Akshay.';
+var hulaHoopText = 'If you think hula hooping is just for kids, think again. This simple piece of equipment can boost the fun factor in your fitness routine and give you an excellent workout at the same time. The hoop is twirled around the waist, limbs or neck. Workshop is facilitated by Smriti Singh.';
+var photographydText = 'A one-day photography workshop for enthusiasts who want to learn photography by understanding the technicalities of cameras and composition techniques. Workshop is taken by Arun Hegden. He is a professional photographer, based up in Mysore.';
 var plantMedicineText = 'Plant based medicine and alternate healing modalities have been around for thousands of years and its time we started looking at the therapeutic benefits of using various kinds of plants to heal us from all forms of ailments and maladies which are psychosomatic in nature and beckon a spiritual catharsis. Workshop facilitated by Abhishek Roycowdhury, founder of Psychedlic Adventure.';
+var aliLifeText = 'An attempt to bring the core of ayurveda & healing to health and wellness. Ranjith Vallathol have tailor-made this workshop from experiences he have had with interactions from all my clients. This is an effort to find solutions to all your concerns put together.';
+var soundhealText = 'Different instruments are set to certain frequencies. Sound healing allows your body to heal itself by slowing down your brain waves, which affect every cell in your body, shifting them from diseased to being in ease. Its just aligning it with whatever you need. Exclusive session at BIG 19';
+var poiText = 'Poi is a form of dance, where weights on the ends of tethers are swung through rhythmical patterns. The word poi comes from the Maori people of Newzealand. Poi dance is part of Maori tradition.The poi dancing outside of Maori culture is a more recent development, and is quite different from traditional Maori poi. Workshop facilitated by Tushal Kamraj.';
+var potCraftText = 'Grafting and budding are horticultural techniques used to join parts from two or more plants so that they appear to grow as a single plant. In grafting, the upper part (scion) of one plant grows on the root system (rootstock) of another plant. In the budding process, a bud is taken from one plant and grown on another. Workshop facilitated by Varanashi Farms.';
+var swsText = 'These include the unique storytelling concepts including blindfold stories, a circle of stories, My Stranger Story, Letters to Myself!, Storytelling Meetup.';
+var dorodangoText = 'Take a handful of mud and begin shaping it into a sphere. Jostle and roll the mud back and forth to bring water to the surface. Roll and gently shake your dorodango while shaping it. You need a smooth, round core to begin your dorodango. Workshop facilitated by Deepak Nair.';
 
 
 menu_content.css({
@@ -242,6 +255,36 @@ $(document).ready(function () {
         $('#popUpModalImg').attr('src', plantMedicine);
         var bandText = document.getElementById("workshopContentId");
         bandText.textContent = plantMedicineText;
+    });
+    $('#wrkshopImg13').click(function () {
+        $('#popUpModalImg').attr('src', aliLife);
+        var bandText = document.getElementById("workshopContentId");
+        bandText.textContent = aliLifeText;
+    });
+    $('#wrkshopImg14').click(function () {
+        $('#popUpModalImg').attr('src', soundheal);
+        var bandText = document.getElementById("workshopContentId");
+        bandText.textContent = soundhealText;
+    });
+    $('#wrkshopImg15').click(function () {
+        $('#popUpModalImg').attr('src', poi);
+        var bandText = document.getElementById("workshopContentId");
+        bandText.textContent = poiText;
+    });
+    $('#wrkshopImg16').click(function () {
+        $('#popUpModalImg').attr('src', potCraft);
+        var bandText = document.getElementById("workshopContentId");
+        bandText.textContent = potCraftText;
+    });
+    $('#wrkshopImg17').click(function () {
+        $('#popUpModalImg').attr('src', sws);
+        var bandText = document.getElementById("workshopContentId");
+        bandText.textContent = swsText;
+    });
+    $('#wrkshopImg18').click(function () {
+        $('#popUpModalImg').attr('src', dorodango);
+        var bandText = document.getElementById("workshopContentId");
+        bandText.textContent = dorodangoText;
     });
 
 });
