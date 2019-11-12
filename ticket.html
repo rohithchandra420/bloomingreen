@@ -137,7 +137,7 @@
         };
         
         function onBusSuccessHandler() {
-            alert('***Thank You***.\nDetails on Bus Boarding Point and the Bus Crew member will be communicated to the provided mobile number one week before the festival');            
+            alert('***TestThank You***.\nDetails on Bus B0arding Point and the Bus Crew member will be communicated to the provided mobile number one week before the festival');            
         }
         
         Instamojo.configure({
@@ -170,7 +170,7 @@
         function onKochiBusTicketClick() {
             Instamojo.configure({
                 handlers: {
-                    onSuccess: onBusSuccessHandler,
+                    onFailure: onBusSuccessHandler,
                 }
             });
             Instamojo.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-kochi-ac-semi-sleeper-round-tri/");
