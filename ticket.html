@@ -135,9 +135,11 @@
                 $("#loading").css({ "display": "none" });
             }, 800);
         };
-
-
-
+        
+        function onBusSuccessHandler() {
+            alert('***Thank You***.\nDetails on Bus Boarding Point and the Bus Crew member will be communicated to the provided mobile number one week before the festival');            
+        }
+        
         Instamojo.configure({
             handlers: {
                 onOpen: function () { },
@@ -151,18 +153,27 @@
         });
 
         function onFestivalTicketClick() {
-            window.open("https://www.instamojo.com/BLOOMINGREEN_19/bloom-in-green-festival-dad11/");
+            Instamojo.open("https://www.instamojo.com/BLOOMINGREEN_19/bloom-in-green-festival-dad11/");
 
         }
 
         function onBlrBusTicketClick() {
-            window.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-bangalore-up-and-down/");
+            Instamojo.configure({
+                handlers: {
+                    onSuccess: onBusSuccessHandler,
+                }
+            });
+            Instamojo.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-bangalore-up-and-down/");
 
         }
 
         function onKochiBusTicketClick() {
-            window.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-kochi-ac-semi-sleeper-round-tri/");
-
+            Instamojo.configure({
+                handlers: {
+                    onSuccess: onBusSuccessHandler,
+                }
+            });
+            Instamojo.open("https://www.instamojo.com/BLOOMINGREEN_19/festival-bus-kochi-ac-semi-sleeper-round-tri/");
         }
 
     </script>
