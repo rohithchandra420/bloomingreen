@@ -259,8 +259,8 @@ a .nav-link {
     top: auto;
     bottom: 0px;
     margin-top: 20px;
-    margin-right: -19px;
 }
+
 #quote-carousel .carousel-indicators li {
     width: 75px;
     height: 75px;
@@ -272,12 +272,24 @@ a .nav-link {
     overflow: hidden;
     transition: all .4s ease-in;
     vertical-align: middle;
+    
+}
+
+#quote1 {
+
     background: url('../img/button.jpg');
 }
 
+#quote2 {
+
+    background: url('../img/button1.jpg');
+}
+
+
+
 #quote-carousel .carousel-indicators .active {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     opacity: 1;
     transition: all .2s;
 }
@@ -286,11 +298,19 @@ a .nav-link {
     border-left: none;
     margin: 0;
 }
+
+blockquote p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
 .carousel-item blockquote p:before {
     content: "\f10d";
     font-family: 'Fontawesome';
-    float: left;
+    float: right;
     margin-right: 10px;
+    font-size: 2rem;
 }
 
 #quote-carousel .img-responsive .active {
@@ -389,11 +409,36 @@ a .nav-link {
     .carousel-caption .btn {
         font-size: 90%;
         padding: 4px 8px;
-    }
+    }    
 
     /* .carousel-indicators {
         display: none;
     } */
+
+    #quote-carousel .carousel-indicators .active {
+        width: 1080px;
+        height: 150px;
+        opacity: 1;
+        transition: all .2s;
+    }
+
+    #quote-carousel .carousel-indicators li {
+        width: 150px;
+        height: 25px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        opacity: 0.4;
+        overflow: hidden;
+        transition: all .4s ease-in;
+        vertical-align: middle;
+    }
+
+    blockquote p {
+        text-align: justify;
+        font-size: 1.5rem;
+    }
 
     .display-4 {
         font-size: 160%;
