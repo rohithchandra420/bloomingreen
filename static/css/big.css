@@ -288,13 +288,25 @@ a .nav-link {
 }
 
 #quote1 {
-
-    background: url('../img/button.jpg');
+    background: url('../img/testimony1.jpg');
 }
-
 #quote2 {
-
-    background: url('../img/button1.jpg');
+    background: url('../img/testimony2.jpg');
+}
+#quote3 {
+    background: url('../img/testimony3.jpg');
+}
+#quote4 {
+    background: url('../img/testimony4.jpg');
+}
+#quote5 {
+    background: url('../img/testimony5.jpg');
+}
+#quote6 {
+    background: url('../img/testimony6.jpg');
+}
+#quote7 {
+    background: url('../img/testimony7.jpg');
 }
 
 
