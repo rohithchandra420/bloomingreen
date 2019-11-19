@@ -77,6 +77,12 @@ p {
     color: rgb(2, 52, 12); 
 }
 
+.nav-link:hover {
+    color: rgb(4, 80, 19); 
+    text-shadow: 0px 0px 5px rgb(2, 52, 12);
+    font-weight: 400px;
+}
+
 a .nav-link {  
     color: #fff; 
 }
@@ -210,9 +216,14 @@ a .nav-link {
   .btn-green:not(:disabled):not(.disabled):active:focus, .btn-green:not(:disabled):not(.disabled).active:focus,
   .show > .btn-green.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgb(4, 80, 19);
-  }
+}
+
 #workshopContentId {
     color: #dee2e6;
+}
+
+#bandCard:hover  {
+    box-shadow: 0px 0px 20px rgb(2, 52, 12);    
 }
 
 .backgroundImg{
@@ -259,6 +270,7 @@ a .nav-link {
     top: auto;
     bottom: 0px;
     margin-top: 20px;
+    z-index: auto;
 }
 
 #quote-carousel .carousel-indicators li {
